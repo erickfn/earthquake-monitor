@@ -1,0 +1,40 @@
+<resources>
+    <string name="app_name">EarthquakeMonitor</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="action_map">Summary map</string>
+    <string name="location">Location: </string>
+
+    <!-- Messages -->
+    <string name="msg_connection">Verify your connection!</string>
+    <string name="no_service">Service unavailable!</string>
+    <string name="data_error">Data error, contact de developer!</string>
+    <string name="no_data">No data by the moment!</string>
+
+    <!-- Services -->
+    <string name="service_usgs">http://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/all_hour.geojson</string>
+
+    <!-- Colors -->
+    <color name="fragment_bg">#e0e0e0</color>
+    <color name="fragment_details_bg">#e0e0e0</color>
+    <color name="card_bg">#ffffff</color>
+    <color name="card_txt">#000000</color>
+    <color name="actiobar_bg">#0fc6dc</color>
+    <color name="white">#ffffff</color>
+    <color name="black">#000000</color>
+    <color name="title">#757575</color>
+
+    <color name="eq0">#8e24aa</color>
+    <color name="earthquake_easy">#388E3C</color>
+    <color name="eq2">#0d47a1</color>
+    <color name="eq3">#827717</color>
+    <color name="eq4">#00838f</color>
+    <color name="eq5">#01579b</color>
+    <color name="eq6">#f9a825</color>
+    <color name="eq7">#1a237e</color>
+    <color name="eq8">#e65100</color>
+    <color name="eq9">#4a148c</color>
+    <color name="earthquake_hard">#D32F2F</color>
+    <color name="eqn">#880e4f</color>
+
+</resources>

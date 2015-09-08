@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:layout_margin="0dp"
+    android:orientation="vertical"
+    android:clickable="true">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_height="match_parent"
+            android:layout_width="match_parent"
+            android:background="@color/fragment_details_bg">
+
+            <ScrollView
+                android:layout_weight="1"
+                android:layout_height="fill_parent"
+                android:layout_width="fill_parent">
+
+                <android.support.v7.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/cv"
+                    android:layout_margin="10dp"
+                    android:layout_gravity="center">
+                    <RelativeLayout
+                        android:layout_height="match_parent"
+                        android:layout_width="match_parent"
+                        android:layout_margin="10dp">
+
+
+
+                        <ImageView
+                            android:layout_width="60dp"
+                            android:layout_height="60dp"
+                            android:id="@+id/imgIcon"
+                            android:layout_alignParentLeft="true"
+                            android:layout_alignParentTop="true"
+                            android:layout_marginRight="16dp"
+                            android:src="@mipmap/ic_launcher"/>
+
+                        <TextView
+                            android:id="@+id/tvMagnitude"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentTop="true"
+                            android:layout_toRightOf="@+id/imgIcon"
+                            android:textSize="30dp"
+                            android:textColor="@color/card_txt" />
+
+                        <TextView
+                            android:id="@+id/tvPlace"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/tvMagnitude"
+                            android:layout_toRightOf="@+id/imgIcon"
+                            android:textSize="18dp"
+                            android:textColor="@color/card_txt"
+                            android:layout_marginTop="5dp"/>
+
+                        <TextView
+                            android:id="@+id/tvDate"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/tvPlace"
+                            android:layout_toRightOf="@+id/imgIcon"
+                            android:textSize="18dp"
+                            android:textColor="@color/card_txt"
+                            android:layout_marginTop="0dp"/>
+
+                        <TextView
+                            android:id="@+id/tvCoordinates"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/tvDate"
+                            android:layout_toRightOf="@+id/imgIcon"
+                            android:textSize="18dp"
+                            android:textColor="@color/black"
+                            android:text="@string/location"
+                            android:layout_marginTop="10dp"
+                            android:textStyle="bold"/>
+
+                        <TextView
+                            android:id="@+id/tvCoordinateValues"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/tvCoordinates"
+                            android:layout_toRightOf="@+id/imgIcon"
+                            android:textSize="14dp"
+                            android:textColor="@color/card_txt"
+                            android:layout_marginTop="0dp"
+                            android:layout_marginLeft="20dp" />
+
+
+
+                    </RelativeLayout>
+                </android.support.v7.widget.CardView>
+            </ScrollView>
+
+            <RelativeLayout android:layout_weight="1" android:layout_height="fill_parent" android:layout_width="fill_parent">
+                <fragment
+                    android:id="@+id/map"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    class="com.google.android.gms.maps.SupportMapFragment" />
+            </RelativeLayout>
+
+        </LinearLayout>
+
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        style="?android:attr/progressBarStyleLarge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"/>
+
+</RelativeLayout>
